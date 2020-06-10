@@ -10,46 +10,50 @@
     <meta name="keywords" content="nandini, kapa, nandinikapa, UCSD, UC, San, Diego, CS, computer, science, personal, design">
     <!---STYLE--------->
     <link rel="stylesheet" type="text/css" href="style/css/style.css"/> 
-    <!-- Sticky Navigation Import-->
-    <script src="style/js/stickyNav.js"></script>
     <!---FAVICON------->
     <link rel="shortcut icon" type="png" href="images/logo.png"/>
+    <!--Sticky Navigation-->
+    <meta charset="UTF-8">
+    <title Navigation from bottom to top></title>
+    <!-- jQuery import -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous">
+    </script>
   </head>
 
-<!-- Hero -->
-<section class="et-hero-tabs">
-  <h1>STICKY SLIDER NAV</h1>
-  <h3>Sliding content with sticky tab nav</h3>
-  <div class="et-hero-tabs-container">
-    <a class="et-hero-tab" href="#tab-es6">ES6</a>
-    <a class="et-hero-tab" href="#tab-flexbox">Flexbox</a>
-    <a class="et-hero-tab" href="#tab-react">React</a>
-    <a class="et-hero-tab" href="#tab-angular">Angular</a>
-    <a class="et-hero-tab" href="#tab-other">Other</a>
-    <span class="et-hero-tab-slider"></span>
-  </div>
-</section>
+  <body>
+    <section id="screen1">
+      <nav>
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="">ABOUT</a></li>
+          <li><a href="">INTERESTS</a></li>
+          <li><a href="">EXPERIENCE</a></li>
+          <li><a href="">RESUME</a></li>
+        </ul>
+      </nav>
+    </section>
 
-<!-- Main -->
-<main class="et-main">
-  <section class="et-slide" id="tab-es6">
-    <h1>ES6</h1>
-    <h3>something about es6</h3>
-  </section>
-  <section class="et-slide" id="tab-flexbox">
-    <h1>Flexbox</h1>
-    <h3>something about flexbox</h3>
-  </section>
-  <section class="et-slide" id="tab-react">
-    <h1>React</h1>
-    <h3>something about react</h3>
-  </section>
-  <section class="et-slide" id="tab-angular">
-    <h1>Angular</h1>
-    <h3>something about angular</h3>
-  </section>
-  <section class="et-slide" id="tab-other">
-    <h1>Other</h1>
-    <h3>something about other</h3>
-  </section>
-</main>
+    <section id="screen2"></section>
+    <section id="screen3"></section>
+  </body>
+
+
+  <script>
+    $(document).ready(function(){
+
+      $(window).bind('scroll', function() {
+        var navHeight = $(window).height() = -70;
+
+        if($(window).scrollTop() > navHeight) {
+          $('nav').addClass('fixed');
+        }
+        else {
+          $('nav').removeClass('fixed');
+        }
+      });
+    });
+  </script>
+</html>
