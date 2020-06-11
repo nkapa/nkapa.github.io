@@ -1,59 +1,62 @@
 <!DOCTYPE html>
+<html lang="en" >
+<head>
+  <title>Nandini Kalana Kapa</title>
+  <!---METADATA------>
+  <meta name="description" content="Nandini Kapa's Personal Website">
+  <meta name="author" content="Nandini Kapa">
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="nandini, kapa, nandinikapa, UCSD, UC, San, Diego, CS, computer, science, personal, design">
+  <!---STYLE--------->
+  <link rel="stylesheet" type="text/css" href="style/css/style.css"/> 
+  <!---FAVICON------->
+  <link rel="shortcut icon" type="png" href="images/logo.png"/>
+  <meta charset="UTF-8">
+  <title>CodePen - Sticky Slider Navigation (Responsive)</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style/css/style.css">
 
-<html lang="en">
-  <head>
-    <title>Nandini Kalana Kapa</title>
-    <!---METADATA------>
-    <meta name="description" content="Nandini Kapa's Personal Website">
-    <meta name="author" content="Nandini Kapa">
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="nandini, kapa, nandinikapa, UCSD, UC, San, Diego, CS, computer, science, personal, design">
-    <!---STYLE--------->
-    <link rel="stylesheet" type="text/css" href="style/css/style.css"/> 
-    <!---FAVICON------->
-    <link rel="shortcut icon" type="png" href="images/logo.png"/>
-    <!--Sticky Navigation-->
-    <meta charset="UTF-8">
-    <title Navigation from bottom to top></title>
-    <!-- jQuery import -->
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.js"
-      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-      crossorigin="anonymous">
-    </script>
-  </head>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- Hero -->
+  <img class="header" src="images/coverImage copy.png">
+  <section class="et-hero-tabs">
+    <div class="et-hero-tabs-container">
+      <a class="et-hero-tab" href="#tab-es6">About</a>
+      <a class="et-hero-tab" href="#tab-flexbox">Projects</a>
+      <a class="et-hero-tab" href="#tab-react">Experience</a>
+      <a class="et-hero-tab" href="#tab-angular">Interests</a>
+      <a class="et-hero-tab" href="#tab-other">Resume</a>
+      <span class="et-hero-tab-slider"></span>
+    </div>
+  </section>
 
-  <body>
-    <section id="screen1">
-      <nav>
-        <ul>
-          <li><a href="">HOME</a></li>
-          <li><a href="">ABOUT</a></li>
-          <li><a href="">INTERESTS</a></li>
-          <li><a href="">EXPERIENCE</a></li>
-          <li><a href="">RESUME</a></li>
-        </ul>
-      </nav>
+  <!-- Main -->
+  <main class="et-main">
+    <section class="et-slide" id="tab-es6">
+      <h1>ES6</h1>
+      <h3>something about es6</h3>
     </section>
+    <section class="et-slide" id="tab-flexbox">
+      <h1>Flexbox</h1>
+      <h3>something about flexbox</h3>
+    </section>
+    <section class="et-slide" id="tab-react">
+      <h1>React</h1>
+      <h3>something about react</h3>
+    </section>
+    <section class="et-slide" id="tab-angular">
+      <h1>Angular</h1>
+      <h3>something about angular</h3>
+    </section>
+    <section class="et-slide" id="tab-other">
+      <h1>Other</h1>
+      <h3>something about other</h3>
+    </section>
+  </main>
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./style/js/script.js"></script>
 
-    <section id="screen2"></section>
-    <section id="screen3"></section>
-  </body>
-
-
-  <script>
-    $(document).ready(function(){
-
-      $(window).bind('scroll', function() {
-        var navHeight = $(window).height() = -70;
-
-        if($(window).scrollTop() > navHeight) {
-          $('nav').addClass('fixed');
-        }
-        else {
-          $('nav').removeClass('fixed');
-        }
-      });
-    });
-  </script>
+</body>
 </html>
