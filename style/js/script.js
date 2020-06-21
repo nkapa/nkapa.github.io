@@ -1,3 +1,4 @@
+/* Sticky Navigation CREDIT: Etrics from codepen.io (BEAUTIFUL job on sticky navigation) */
 class StickyNavigation {
 	
 	constructor() {
@@ -5,22 +6,27 @@ class StickyNavigation {
 		this.currentTab = null;
 		this.tabContainerHeight = 70;
 		let self = this;
+		// redirect to selected page
 		$('.et-hero-tab').click(function() { 
 			self.onTabClick(event, $(this)); 
 		});
+		// causes nav bar to persist beyond refresh of page
+		this.onScroll();
+		// used to resize nav bar appropriately
 		$(window).scroll(() => { this.onScroll(); });
 		$(window).resize(() => { this.onResize(); });
 	}
 	
 	onTabClick(event, element) {
+		console.log(element);
 		event.preventDefault();
-		let scrollTop = $(element.attr('href')).offset().top - this.tabContainerHeight + 1;
+		let scrollTop = $(element.attr('href')).offset().top;
 		$('html, body').animate({ scrollTop: scrollTop }, 600);
 	}
 	
 	onScroll() {
 		this.checkTabContainerPosition();
-    this.findCurrentTabSelector();
+		this.findCurrentTabSelector();
 	}
 	
 	onResize() {

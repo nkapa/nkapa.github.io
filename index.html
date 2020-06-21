@@ -1,3 +1,4 @@
+<!-- Sticky Navigation CREDIT: Etrics from codepen.io (BEAUTIFUL job on sticky navigation) -->
 <!DOCTYPE html>
 <html lang="en" >
 <head>
@@ -11,52 +12,84 @@
   <link rel="stylesheet" type="text/css" href="style/css/style.css"/> 
   <!---FAVICON------->
   <link rel="shortcut icon" type="png" href="images/logo.png"/>
-  <meta charset="UTF-8">
-  <title>CodePen - Sticky Slider Navigation (Responsive)</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./style/css/style.css">
+  <link rel="stylesheet" href="./style/css/style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<!-- Hero -->
-  <img class="header" src="images/darkCoverImage.png">
+  <div class="container">
+    <img class="header" src="images/darkCoverImage.png">
+    <div class="titleText"><b><i>NANDINI KAPA</i></b></div>
+    <div class="socials">
+      <!-- _blank: opens in new tab-->
+      <a href=https://linkedin.com/in/nandinikapa target=_blank>
+        <img src="images/linkedin.png" class="icon">
+      </a>
+      <a href=https://github.com/nkapa target=_blank>
+        <img src="images/github.png" class="icon">
+      </a>
+      <a href=https://www.instagram.com/nandini.kapa/ target=_blank>
+        <img src="images/instagram.png" class="icon">
+      </a>
+    </div>
+  </div>
   <section class="et-hero-tabs">
     <div class="et-hero-tabs-container">
-      <a class="et-hero-tab" href="#tab-es6">About</a>
-      <a class="et-hero-tab" href="#tab-flexbox">Projects</a>
-      <a class="et-hero-tab" href="#tab-react">Experience</a>
-      <a class="et-hero-tab" href="#tab-angular">Interests</a>
-      <a class="et-hero-tab" href="#tab-other">Resume</a>
+      <a class="et-hero-tab" href="#tab-about">About</a>
+      <a class="et-hero-tab" href="#tab-projects">Projects</a>
+      <a class="et-hero-tab" href="#tab-experience">Experience</a>
+      <a class="et-hero-tab" href="#tab-interests">Interests</a>
+      <a href="https://drive.google.com/file/d/1mCRC4EJ3B4BWWlVFHb1EJ0f1VJLprmjY/view?usp=sharing" target=_blank class="et-hero-tab-res">Resume</a>
       <span class="et-hero-tab-slider"></span>
     </div>
   </section>
 
   <!-- Main -->
   <main class="et-main">
-    <section class="et-slide" id="tab-es6">
-      <h1>ES6</h1>
-      <h3>something about es6</h3>
+    <section class="et-slide" id="tab-about">
+      <h1>Who am I?</h1>
+      <h3>something about me</h3>
     </section>
-    <section class="et-slide" id="tab-flexbox">
-      <h1>Flexbox</h1>
-      <h3>something about flexbox</h3>
+
+    <section class="et-slide-projects" id="tab-projects">
+      <h1>Projects</h1>
+      <article>
+        <div class="project-header">
+          <a target=_blank href="https://youtu.be/66Q7XpXZKKM">
+            <h1>Almond Plant Management Application</h1>
+            <h2>This app does this...</h2>
+            <img src="images/almounds.png" />
+          </a>   
+        </div>
+        <!--
+        <div class="article-body">
+          <h1>Almond Plant Management Application</h1>
+          <a href="#">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quis, nulla tenetur maxime similique animi labore incidunt soluta? Quae quo recusandae velit est, consequuntur quasi sed sunt corporis voluptates cumque.</p> 
+          </a>
+          <a target=_blank href="https://youtu.be/66Q7XpXZKKM">
+            <span><img src="images/youtube-dark.png" class="sub-icon"></span>
+          </a>
+        </div>         
+        -->
+      </article>
     </section>
-    <section class="et-slide" id="tab-react">
-      <h1>React</h1>
-      <h3>something about react</h3>
+
+    <section class="et-slide" id="tab-experience">
+      <h1>Experience</h1>
+      <h3>something about experiences</h3>
     </section>
-    <section class="et-slide" id="tab-angular">
-      <h1>Angular</h1>
-      <h3>something about angular</h3>
-    </section>
-    <section class="et-slide" id="tab-other">
-      <h1>Other</h1>
-      <h3>something about other</h3>
+    <section class="et-slide" id="tab-interests">
+      <h1>Interests</h1>
+      <h3>What other (non-CS) interests do I have?</h3>
     </section>
   </main>
+
   <!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./style/js/script.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script  src="./style/js/script.js"></script>
+  <script src="https://kit.fontawesome.com/yourcode.js"></script>
 
 </body>
 </html>
