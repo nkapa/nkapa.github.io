@@ -9,9 +9,15 @@ a {
 
 .socials {
   position: absolute;
-  left: 27%;
-  top: 70%;
-  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  left: 2.5%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .icon {
@@ -29,35 +35,62 @@ a {
   height: 30px;
 }
 
-.titleText {
-  position: absolute;
-  top: 40%;
-  left: 15%;
-  font-size: 2rem;
-  letter-spacing: 0.3rem;
-  opacity: 0.6;
-}
-
-.titleText:after {
-  content: "";
-  position: absolute;
-  border-top: 4px solid #69273e;
-  left: 9%;
-  bottom: -50%;
-  width: 80%;
-  height: 0px;
-}
-
 .container {
   position: relative;
+  background: #1c1c1c;
   text-align: center;
-  color: white;
+  padding: 0 2em;
+  display: block;
 }
 
 .header {
   width: 100%;
   display: block;
+  box-sizing: border-box;
 }
+
+.et-home {
+  position: relative;
+  background: #69273e;
+  text-align: center;
+  display: block;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  color: #eee;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  text-shadow: 0 0 5em #000;
+  animation: floats 3s ease infinite;
+}
+
+@keyframes floats {
+  0%   {top: 50%;}
+  50%  {top: 52%;}
+  100% {top: 50%;}
+}
+
+.et-about-slide {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  position: relative;
+  background: #1c1c1c;
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+
 
 .et-slide {
   display: -webkit-box;
@@ -76,7 +109,7 @@ a {
   padding: 0 2em;
 }
 
-.et-slide-projects {
+.et-slide-even {
   padding: 0;
   margin: 0;
   display: -webkit-inline-box;
@@ -86,11 +119,11 @@ a {
   display: table;
   align-items: center;
   justify-content: center;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   width: 100%;
   position: relative;
-  background: #eee;
+  background: #aeb0be;
   text-align: center;
   justify-content: center;
 }
@@ -107,8 +140,7 @@ a {
           align-items: center;
   height: 40px;
   position: relative;
-  background: #eee;
-
+  background: #a5a7b2;
   text-align: center;
   padding: 0 2em;
 }
@@ -117,6 +149,7 @@ a {
 .et-slide h1 {
   font-size: 2rem;
   margin: 0;
+  padding: 0;
   letter-spacing: 1rem;
 }
 .et-hero-tabs h3,
@@ -178,14 +211,14 @@ a {
 }
 
 .et-hero-tab-res:hover {
-  color: white;
+  color: #eee;
   background: #69273e;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
 .et-hero-tab:hover {
-  color: white;
+  color: #eee;
   background: #69273e;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -202,7 +235,7 @@ a {
 }
 
 @media (min-width: 800px) {
-  .titleText {
+  .about h1 {
     font-size: 4rem;
   }
 
@@ -225,7 +258,7 @@ a {
     font-size: 3rem;
   }
 
-  .titleText {
+  .about h1 {
     font-size: 5rem;
   }
 
@@ -255,8 +288,19 @@ a {
   }
 }
 
-article {
+.project {
   width: 450px;
+  margin: 10px 10px;
+  background: white;
+  border-bottom: 10px solid darken(#000, 10%);
+  border-radius: 3px;
+  position: relative;
+  display:inline-block; 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+article {
+  width: 300px;
   margin: 10px 10px;
   background: white;
   border-bottom: 10px solid darken(#000, 10%);
@@ -270,8 +314,8 @@ article .article-header {
   position: relative;  
   padding: 0;
   margin: 0;
-  height: 200px;
-  overflow: hidden; 
+  height: 250px;
+  overflow: hidden;
 }
 
 article .project-header {
@@ -297,7 +341,7 @@ article .project-header h1 {
   font-size: 23px;
   color: #000;
   opacity: 0;
-  transition: opacity .5s;
+  transition: opacity 1.5s;
   z-index: 1;
 }
 
@@ -316,6 +360,7 @@ article .project-header h2 {
   font-size: 15px;
   color: #000;
   opacity: 0;
+  transition: opacity 1.5s;
   z-index: 1;
 }
 
@@ -332,12 +377,14 @@ article:hover .article-body span {
 }
 
 article .article-header img {
-  width: 400px;
-  transition: transform .5s; /* Animation */
+  width: 300px;
+  height: 75%;
+  transition: opacity 1.5s;
 }
 
 article .article-header img:hover {
   transform: scale(1.5);
+  height: 65%;
   opacity: 0.6;
 }
 
@@ -346,6 +393,7 @@ article .article-body {
   padding: 0% 20px;
   padding-bottom: 22px;
 }
+
 
 article .article-body span {
   position: absolute;
@@ -367,7 +415,85 @@ article .article-body span:hover {
 }
 
 article .article-body h1 {
-  color: black;
-  font-weight: 200;
-  font-size: 20px;  
+  font-size: 10px;
+  color: #000;
+  transition: opacity .5s;
+}
+
+.about {
+  color: #1c1c1c;
+  position: relative;
+  text-align: left;
+}
+
+.about h1 {
+  position: absolute;
+  color: #eee;
+  top: 15%;
+  left: 15%;
+}
+
+.about h2 {
+  position: absolute;
+  color: #eee;
+  top: 40%;
+  right: 40%;
+  left: 15%;
+  font-size: 10px;
+}
+
+.expTitle {
+  color: white;
+  text-align: center;
+}
+
+.expPosition {
+  font-size:20px;
+  font-weight: 500;
+  text-align: left;
+  line-height: 1;
+  float: left;
+  color: #eee;
+  padding-top: 30px;
+}
+
+.expTime  {
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 1;
+  padding-top: 1%;
+  text-align: left;
+  color: #eee;
+}
+
+.expCompany {
+  font-weight: 100;
+  font-size: 17.5px;
+  float: right;
+  text-align: right;
+  color: #eee;
+}
+
+.expDesc {
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 1.5;
+  padding-top: 3%;
+  text-align: left;
+  color: #eee;
+  padding-bottom: 60px;
+}
+
+.et-slide-exp {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  position: relative;
+  background: #1c1c1c;
+  text-align: center;
+  padding: 0 2em;
 }

@@ -4,21 +4,19 @@ class StickyNavigation {
 	constructor() {
 		this.currentId = null;
 		this.currentTab = null;
-		this.tabContainerHeight = 70;
+		this.tabContainerHeight = 40;
 		let self = this;
+		this.numAnimate = 0;
 		// redirect to selected page
 		$('.et-hero-tab').click(function() { 
 			self.onTabClick(event, $(this)); 
 		});
-		// causes nav bar to persist beyond refresh of page
-		this.onScroll();
 		// used to resize nav bar appropriately
 		$(window).scroll(() => { this.onScroll(); });
 		$(window).resize(() => { this.onResize(); });
 	}
 	
 	onTabClick(event, element) {
-		console.log(element);
 		event.preventDefault();
 		let scrollTop = $(element.attr('href')).offset().top;
 		$('html, body').animate({ scrollTop: scrollTop }, 600);
@@ -36,6 +34,7 @@ class StickyNavigation {
 	}
 	
 	checkTabContainerPosition() {
+		let id = $(this).attr('href');
 		let offset = $('.et-hero-tabs').offset().top + $('.et-hero-tabs').height() - this.tabContainerHeight;
 		if($(window).scrollTop() > offset) {
 			$('.et-hero-tabs-container').addClass('et-hero-tabs-container--top');
@@ -57,11 +56,32 @@ class StickyNavigation {
 				newCurrentId = id;
 				newCurrentTab = $(this);
 			}
+			if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+				newCurrentId = "#tab-interests"
+			}
 		});
 		if(this.currentId != newCurrentId || this.currentId === null) {
 			this.currentId = newCurrentId;
 			this.currentTab = newCurrentTab;
 			this.setSliderCss();
+		}
+		if(this.currentId === "#tab-about") {
+			this.numAnimate = this.numAnimate + 1;
+			$('.et-hero-tab').css('color', "#eee");
+			$('.et-hero-tab-res').css('color', "#eee");
+			/*if(this.numAnimate === 1) {
+				$('.typewriter h1').addClass('animateType');
+				$('.typewriter h1').css('visibility', "visible");
+			}*/
+		}
+		else if( this.currentId != null ){
+			$('.et-hero-tab').css('color', "#eee");
+			$('.et-hero-tab-res').css('color', "#eee");
+		}
+		else {
+			$('.et-hero-tab').css('color', "#1c1c1c");
+			$('.et-hero-tab-res').css('color', "#1c1c1c");
+			//$('.typewriter h1').removeClass('animateType');
 		}
 	}
 	

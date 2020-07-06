@@ -18,21 +18,9 @@
 </head>
 <body>
 <!-- partial:index.partial.html -->
-  <div class="container">
-    <img class="header" src="images/darkCoverImage.png">
-    <div class="titleText"><b><i>NANDINI KAPA</i></b></div>
-    <div class="socials">
-      <!-- _blank: opens in new tab-->
-      <a href=https://linkedin.com/in/nandinikapa target=_blank>
-        <img src="images/linkedin.png" class="icon">
-      </a>
-      <a href=https://github.com/nkapa target=_blank>
-        <img src="images/github.png" class="icon">
-      </a>
-      <a href=https://www.instagram.com/nandini.kapa/ target=_blank>
-        <img src="images/instagram.png" class="icon">
-      </a>
-    </div>
+  <div class="et-home" id="et-home">
+      <div id="particles-js"></div>
+      <div class="centered">NANDINI KAPA</div>
   </div>
   <section class="et-hero-tabs">
     <div class="et-hero-tabs-container">
@@ -47,49 +35,74 @@
 
   <!-- Main -->
   <main class="et-main">
-    <section class="et-slide" id="tab-about">
-      <h1>Who am I?</h1>
-      <h3>something about me</h3>
+    <section class="et-about-slide" id="tab-about">
+      <div class="about">
+        <h1><span style="color: #69273e;">Hello</span>, I'm Nandini.</h1>
+        <h2>I am a junior computer science student at the University of California, San Diego with expected graduation in June 2022. I am currently looking for a Software Engineering internship for Summer 2021...</h2>
+        <img class="header" src="images/darkCoverImage.png">
+      </div>
+      <div class="socials">
+        <!-- _blank: opens in new tab-->
+        <a href=https://linkedin.com/in/nandinikapa target=_blank>
+          <img src="images/linkedin.png" class="icon">
+        </a>
+        <a href=https://github.com/nkapa target=_blank>
+          <img src="images/github.png" class="icon">
+        </a>
+        <a href=https://www.instagram.com/nandini.kapa/ target=_blank>
+          <img src="images/instagram.png" class="icon">
+        </a>
+      </div>
+    </div>
     </section>
-
-    <section class="et-slide-projects" id="tab-projects">
+    
+    <section class="et-slide-even" id="tab-projects">
       <h1>Projects</h1>
-      <article>
+      <article class="project">
         <div class="project-header">
           <a target=_blank href="https://youtu.be/66Q7XpXZKKM">
             <h1>Almond Plant Management Application</h1>
-            <h2>This app does this...</h2>
+            <h2>This application provides a clean and easy to use interface for the workers of the Central California Almond Growers Association to manage the dynamic roles and functionality of an almond processing plant.</h2>
             <img src="images/almounds.png" />
           </a>   
         </div>
-        <!--
+      </article>
+    </section>
+    <section class="et-slide-exp" id="tab-experience">
+      <div class="expPosition"><b>Software Engineering Intern</b><div class="expCompany"><i>General Atomics</i></div></div>
+      <div class="expTime">June 2020 - Present</div>
+      <div class="expDesc">What I did.</div>
+      <div class="expPosition"><b>Undergraduate Tutor</b><div class="expCompany"><i>UCSD CSE Department</i></div></div>
+      <div class="expTime">September 2019 - Present</div>
+      <div class="expDesc">What I did.</div>
+      <div class="expPosition"><b>Software Engineer</b><div class="expCompany"><i>Software Tools Team</i></div></div>
+      <div class="expTime">September 2019 - Present</div>
+      <div class="expDesc">What I did.</div>
+    </section>
+    <section class="et-slide-even" id="tab-interests">
+      <h1>Interests</h1>
+      <!--<article>
+        <div class="article-header">
+          <a target=_blank href="https://youtu.be/66Q7XpXZKKM">
+            <img src="images/almounds.png" />
+          </a>   
+        </div>
         <div class="article-body">
-          <h1>Almond Plant Management Application</h1>
           <a href="#">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quis, nulla tenetur maxime similique animi labore incidunt soluta? Quae quo recusandae velit est, consequuntur quasi sed sunt corporis voluptates cumque.</p> 
           </a>
           <a target=_blank href="https://youtu.be/66Q7XpXZKKM">
             <span><img src="images/youtube-dark.png" class="sub-icon"></span>
           </a>
-        </div>         
-        -->
-      </article>
-    </section>
-
-    <section class="et-slide" id="tab-experience">
-      <h1>Experience</h1>
-      <h3>something about experiences</h3>
-    </section>
-    <section class="et-slide" id="tab-interests">
-      <h1>Interests</h1>
-      <h3>What other (non-CS) interests do I have?</h3>
+        </div>
+      </article>-->
     </section>
   </main>
 
   <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
   <script  src="./style/js/script.js"></script>
-  <script src="https://kit.fontawesome.com/yourcode.js"></script>
-
+  <script src="./style/js/particles.js"></script>
+  <script src="./style/js/app.js"></script>
 </body>
 </html>
