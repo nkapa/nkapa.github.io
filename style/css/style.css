@@ -51,7 +51,7 @@ a {
 
 .et-home {
   position: relative;
-  background: #69273e;
+  background: #ffa8b4;
   text-align: center;
   display: block;
 }
@@ -123,7 +123,7 @@ a {
   padding-bottom: 5%;
   width: 100%;
   position: relative;
-  background: #aeb0be;
+  background: #edf7f6;
   text-align: center;
   justify-content: center;
 }
@@ -140,7 +140,7 @@ a {
           align-items: center;
   height: 40px;
   position: relative;
-  background: #a5a7b2;
+  background: #edf7f6;
   text-align: center;
   padding: 0 2em;
 }
@@ -211,15 +211,13 @@ a {
 }
 
 .et-hero-tab-res:hover {
-  color: #eee;
-  background: #69273e;
+  background: #ffa8b4;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
 .et-hero-tab:hover {
-  color: #eee;
-  background: #69273e;
+  background: #ffa8b4;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -229,7 +227,7 @@ a {
   bottom: 0;
   width: 0;
   height: 3px;
-  background: #69273e;
+  background: #ffa8b4;
   -webkit-transition: left 0.3s ease;
   transition: left 0.3s ease;
 }
@@ -354,7 +352,6 @@ article .project-header h2 {
   height: 250px;
   width: 450px;
   margin: 0 auto;
-  padding: 0;
   border: 0;
   top: 50%;
   font-size: 15px;
