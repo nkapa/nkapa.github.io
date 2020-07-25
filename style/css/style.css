@@ -54,6 +54,7 @@ a {
   background: #ffa8b4;
   text-align: center;
   display: block;
+  height: 400px;
 }
 
 .centered {
@@ -63,7 +64,7 @@ a {
   width: 100%;
   color: #eee;
   transform: translate(-50%, -50%);
-  font-size: 50px;
+  font-size: 3em;
   text-shadow: 0 0 5em #000;
   animation: floats 3s ease infinite;
 }
@@ -450,7 +451,7 @@ article .article-body h1 {
   text-align: left;
   line-height: 1;
   float: left;
-  color: #eee;
+  color: #ffa8b4;
   padding-top: 30px;
 }
 
@@ -475,10 +476,9 @@ article .article-body h1 {
   font-size: 15px;
   font-weight: 100;
   line-height: 1.5;
-  padding-top: 3%;
+  padding-top: .5%;
   text-align: left;
   color: #eee;
-  padding-bottom: 60px;
 }
 
 .et-slide-exp {
@@ -493,4 +493,5 @@ article .article-body h1 {
   background: #1c1c1c;
   text-align: center;
   padding: 0 2em;
+  padding-bottom: 2em;
 }

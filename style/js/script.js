@@ -4,6 +4,7 @@ class StickyNavigation {
 	constructor() {
 		this.currentId = null;
 		this.currentTab = null;
+		this.pastId = null; // this will determine if null space has been reached
 		this.tabContainerHeight = 40;
 		let self = this;
 		this.numAnimate = 0;
@@ -56,41 +57,34 @@ class StickyNavigation {
 				newCurrentId = id;
 				newCurrentTab = $(this);
 			}
-			if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-				newCurrentId = "#tab-interests"
-			}
 		});
 		if(this.currentId != newCurrentId || this.currentId === null) {
+			this.pastId = this.currentId;
 			this.currentId = newCurrentId;
 			this.currentTab = newCurrentTab;
 			this.setSliderCss();
 		}
-		if(this.currentId === "#tab-about") {
-			this.numAnimate = this.numAnimate + 1;
-			$('.et-hero-tab').css('color', "#eee");
-			$('.et-hero-tab-res').css('color', "#eee");
-			/*if(this.numAnimate === 1) {
-				$('.typewriter h1').addClass('animateType');
-				$('.typewriter h1').css('visibility', "visible");
-			}*/
-		}
-		else if( this.currentId != null ){
+		if(this.currentId === "#tab-about" || this.currentId === "#tab-experience") {
 			$('.et-hero-tab').css('color', "#eee");
 			$('.et-hero-tab-res').css('color', "#eee");
 		}
 		else {
 			$('.et-hero-tab').css('color', "#1c1c1c");
 			$('.et-hero-tab-res').css('color', "#1c1c1c");
-			//$('.typewriter h1').removeClass('animateType');
 		}
 	}
 	
 	setSliderCss() {
 		let width = 0;
 		let left = 0;
+		console.log(this.pastId)
 		if(this.currentTab) {
 			width = this.currentTab.css('width');
 			left = this.currentTab.offset().left;
+		}
+		else if (!this.pastId && !this.currentId) {
+			width = 82.203125
+			left = 164.40625
 		}
 		$('.et-hero-tab-slider').css('width', width);
 		$('.et-hero-tab-slider').css('left', left);
