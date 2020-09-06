@@ -78,14 +78,8 @@ class StickyNavigation {
 		let width = 0;
 		let left = 0;
 		console.log(this.pastId)
-		if(this.currentTab) {
-			width = this.currentTab.css('width');
-			left = this.currentTab.offset().left;
-		}
-		else if (!this.pastId && !this.currentId) {
-			width = 82.203125
-			left = 164.40625
-		}
+		width = this.currentTab.css('width');
+		left = this.currentTab.offset().left;
 		$('.et-hero-tab-slider').css('width', width);
 		$('.et-hero-tab-slider').css('left', left);
 	}

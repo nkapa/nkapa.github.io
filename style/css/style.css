@@ -7,6 +7,17 @@ a {
   text-decoration: none;
 }
 
+#container {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #52a5de;
+}
+
 .socials {
   position: absolute;
   justify-content: center;
@@ -43,18 +54,12 @@ a {
   display: block;
 }
 
-.header {
-  width: 100%;
-  display: block;
-  box-sizing: border-box;
-}
-
 .et-home {
   position: relative;
   background: #ffa8b4;
   text-align: center;
   display: block;
-  height: 400px;
+  height: 95vh;
 }
 
 .centered {
@@ -64,8 +69,8 @@ a {
   width: 100%;
   color: #eee;
   transform: translate(-50%, -50%);
-  font-size: 3em;
-  text-shadow: 0 0 5em #000;
+  font-size: 3rem;
+  text-shadow: 0 0 5rem #000;
   animation: floats 3s ease infinite;
 }
 
@@ -76,38 +81,14 @@ a {
 }
 
 .et-about-slide {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
-  -webkit-box-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-          align-items: center;
-  position: relative;
-  background: #1c1c1c;
-  text-align: center;
+  background-image: url("../../images/coverImage.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #1c1c1c;
+  background-position: right;
   width: 100%;
-  display: block;
-}
-
-
-.et-slide {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
-  -webkit-box-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-          align-items: center;
-  height: 728px;
-  position: relative;
-  background: #eee;
-  text-align: center;
-  padding: 0 2em;
+  height: 100%;
+  padding-top: 5vh;
 }
 
 .et-slide-even {
@@ -120,9 +101,10 @@ a {
   display: table;
   align-items: center;
   justify-content: center;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
   width: 100%;
+  height: 100vh;
   position: relative;
   background: #edf7f6;
   text-align: center;
@@ -139,11 +121,11 @@ a {
           justify-content: center;
   -webkit-box-align: center;
           align-items: center;
-  height: 40px;
+  height: 5vh;
   position: relative;
   background: #edf7f6;
   text-align: center;
-  padding: 0 2em;
+  padding: 0 2rem;
 }
 
 .et-hero-tabs h1,
@@ -227,16 +209,13 @@ a {
   position: absolute;
   bottom: 0;
   width: 0;
-  height: 3px;
+  height: 4px;
   background: #ffa8b4;
   -webkit-transition: left 0.3s ease;
   transition: left 0.3s ease;
 }
 
 @media (min-width: 800px) {
-  .about h1 {
-    font-size: 4rem;
-  }
 
   .hLine {
     height: 500px;
@@ -245,7 +224,7 @@ a {
   .socials {
     left: 36%;
   }
-  
+
   .icon {
     height: 40px;
   }
@@ -255,10 +234,6 @@ a {
   .et-hero-tabs h1,
   .et-slide h1 {
     font-size: 3rem;
-  }
-
-  .about h1 {
-    font-size: 5rem;
   }
 
   .hLine {
@@ -288,7 +263,7 @@ a {
 }
 
 .project {
-  width: 450px;
+  width: 25rem;
   margin: 10px 10px;
   background: white;
   border-bottom: 10px solid darken(#000, 10%);
@@ -319,20 +294,17 @@ article .article-header {
 
 article .project-header {
   position: relative;  
-  padding: 0;
-  margin: 0;
-  height: 250px;
-  overflow: hidden; 
+  height: 30vh;
 }
 
 article .project-header img {
-  width: 450px;
+  width: 25rem;
 }
 
 article .project-header h1 {
   position: absolute;
-  height: 250px;
-  width: 450px;
+  height: 30vh;
+  width: 25rem;
   margin: 0 auto;
   padding: 0;
   border: 0;
@@ -350,10 +322,8 @@ article .project-header:hover h1{
 
 article .project-header h2 {
   position: absolute;
-  height: 250px;
-  width: 450px;
-  margin: 0 auto;
-  border: 0;
+  height: 30vh;
+  width: 25rem;
   top: 50%;
   font-size: 15px;
   color: #000;
@@ -418,45 +388,34 @@ article .article-body h1 {
   transition: opacity .5s;
 }
 
-.about {
-  color: #1c1c1c;
-  position: relative;
+.et-about-slide h1 {
+  color: #eee;
+  padding-left: 10vw;
+  font-size: 8vw;
   text-align: left;
 }
 
-.about h1 {
-  position: absolute;
+.et-about-slide h2 {
   color: #eee;
-  top: 15%;
-  left: 15%;
-}
-
-.about h2 {
-  position: absolute;
-  color: #eee;
-  top: 40%;
-  right: 40%;
-  left: 15%;
-  font-size: 10px;
-}
-
-.expTitle {
-  color: white;
-  text-align: center;
+  padding-right: 30vw;
+  padding-left: 10vw;
+  font-size: 2vw;
+  text-align: left;
+  padding-bottom: 5vh;
 }
 
 .expPosition {
-  font-size:20px;
+  font-size: 2vw;
   font-weight: 500;
   text-align: left;
   line-height: 1;
   float: left;
   color: #ffa8b4;
-  padding-top: 30px;
+  padding-top: 6vh;
 }
 
 .expTime  {
-  font-size: 12px;
+  font-size: 1.5vw;
   font-weight: 100;
   line-height: 1;
   padding-top: 1%;
@@ -466,14 +425,14 @@ article .article-body h1 {
 
 .expCompany {
   font-weight: 100;
-  font-size: 17.5px;
+  font-size: 2vw;
   float: right;
   text-align: right;
   color: #eee;
 }
 
 .expDesc {
-  font-size: 15px;
+  font-size: 1.5vw;
   font-weight: 100;
   line-height: 1.5;
   padding-top: .5%;
@@ -492,6 +451,7 @@ article .article-body h1 {
   position: relative;
   background: #1c1c1c;
   text-align: center;
+  background-size: auto;
   padding: 0 2em;
-  padding-bottom: 2em;
+  padding-bottom: 6vh;
 }
