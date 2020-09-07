@@ -29,9 +29,8 @@ class StickyNavigation {
 	}
 	
 	onResize() {
-		if(this.currentId) {
-			this.setSliderCss();
-		}
+		// TODO: glitch when resizing at top of page
+		this.setSliderCss();
 	}
 	
 	checkTabContainerPosition() {
@@ -64,6 +63,8 @@ class StickyNavigation {
 			this.currentTab = newCurrentTab;
 			this.setSliderCss();
 		}
+
+		// alternate nav bar text color for each slide
 		if(this.currentId === "#tab-about" || this.currentId === "#tab-experience") {
 			$('.et-hero-tab').css('color', "#eee");
 			$('.et-hero-tab-res').css('color', "#eee");
