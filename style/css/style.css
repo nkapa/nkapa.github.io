@@ -55,6 +55,7 @@ a {
   font-size: 3rem;
   text-shadow: 0 0 5rem #000;
   animation: floats 3s ease infinite;
+  font-family: 'Libre Baskerville', serif;
 }
 
 @keyframes floats {
