@@ -190,6 +190,22 @@ a {
 }
 
 /***************** PROJECTS PAGE *****************/
+.github {
+  width: 350px;
+  margin: 10px 10px;
+  background: white;
+  border-bottom: 10px solid darken(#000, 10%);
+  border-radius: 3px;
+  position: relative;
+  display: inline-block; 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+.github-header {
+  position: relative;  
+  height: 200px;
+}
+
 .project {
   width: 350px;
   margin: 10px 10px;
@@ -211,8 +227,12 @@ article .project-header img {
   height:200px;
 }
 
-article .project-header:hover img {
+article .project-header:hover img{
   opacity: 0.4;
+}
+
+.github {
+  opacity: 1;
 }
 
 article .project-header h1 {
