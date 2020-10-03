@@ -1,3 +1,3 @@
-### Nandini Kapa's Personal Wesbite
+# Nandini Kapa's Personal Wesbite
 
-Check out the website [here](https://nkapa.github.io/)!
+## Check out the website [here](https://nkapa.github.io/)!
