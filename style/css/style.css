@@ -228,7 +228,7 @@ article .project-header img {
 }
 
 article .project-header:hover img{
-  opacity: 0.4;
+  opacity: 0.1;
 }
 
 .github {
