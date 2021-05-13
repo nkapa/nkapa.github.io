@@ -45,6 +45,18 @@ a {
   height: 95vh;
 }
 
+.et-almounds-slide {
+  position: relative;
+  background: url("../../images/almounds/almonds.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: block;
+  height: 50vh;
+  width: 100%;
+  
+}
+
 .centered {
   position: absolute;
   top: 50%;
@@ -53,6 +65,19 @@ a {
   color: #eee;
   transform: translate(-50%, -50%);
   font-size: 3rem;
+  text-shadow: 0 0 5rem #000;
+  animation: floats 3s ease infinite;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.case {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #eee;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  width: 90vw;
   text-shadow: 0 0 5rem #000;
   animation: floats 3s ease infinite;
   font-family: 'Libre Baskerville', serif;
@@ -314,6 +339,13 @@ article .project-header h2 {
   font-family: 'Libre Baskerville', serif;
 }
 
+.back {
+  float: left;
+  margin-left: 5vw;
+  margin-top: 5vh;
+  color: black;
+}
+
 .expDesc {
   font-size: 1.75vw;
   font-weight: 100;
@@ -325,7 +357,7 @@ article .project-header h2 {
 
 /***************** INTERESTS PAGE - Photo Gallery *****************/
 .gallery {
-  column-width: 320px;
+  column-width: 200px;
   column-gap: 0;
   row-gap: 0;
   width: 100%;
