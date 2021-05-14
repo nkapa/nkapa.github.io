@@ -57,6 +57,18 @@ a {
   
 }
 
+.et-cotrack-slide {
+  position: relative;
+  background: url("../../images/cotrack/covid19.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: block;
+  height: 50vh;
+  width: 100%;
+  
+}
+
 .centered {
   position: absolute;
   top: 50%;
@@ -74,13 +86,52 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  color: #eee;
+  color: #FFF;
   transform: translate(-50%, -50%);
   font-size: 2rem;
   width: 90vw;
   text-shadow: 0 0 5rem #000;
   animation: floats 3s ease infinite;
   font-family: 'Libre Baskerville', serif;
+}
+
+.header {
+  margin-bottom: 1vh; 
+  margin-top: 1vh; 
+  font-size: 3vh;
+  font-family: serif;
+  margin-left: 5vw;
+}
+
+.et-slide-almound {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: center;
+            justify-content: center;
+    text-align: center;
+    background-size: auto;
+    padding: 0 5px;
+    padding-bottom: 6vh;
+}
+
+.text {
+  font-size: 2vw;
+  font-weight: 500;
+  float: left;
+  font-family: serif;
+  padding-top: 5vh;
+  text-align: center;
+}
+
+.speak {
+  font-size: 1.75vw;
+  font-weight: 100;
+  float: left;
+  text-align: left;
+  display: flex;
 }
 
 @keyframes floats {

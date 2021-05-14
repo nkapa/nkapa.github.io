@@ -1,0 +1,75 @@
+<!-- Sticky Navigation CREDIT: Etrics from codepen.io (BEAUTIFUL job on sticky navigation) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Nandini Kalana Kapa</title>
+  <!---METADATA-->
+  <meta name="description" content="Nandini Kapa's Personal Website">
+  <meta name="author" content="Nandini Kapa">
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords"
+    content="nandini, kapa, nandinikapa, UCSD, UC, San, Diego, CS, computer, science, personal, design">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!---STYLE-->
+  <link rel="stylesheet" type="text/css" href="../style/css/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!---FAVICON-->
+  <link rel="shortcut icon" type="png" href="../images/logo.png"/>
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+    <div class="et-cotrack-slide" id="et-home">
+    <a href="../index.html#tab-projects" class="fa fa-arrow-circle-left fa-3x back" aria-hidden="true"></a>
+    <div class="case">An iOS application that handles and <span style="color: #7df9ff;">optimizes the day to day operations of an actual almond processing plant</span> in Central California.</div>
+    </div>
+    <main id="et-main">
+        <!-- <section class="et-slide-almound" id="tab-projects">
+            <span class="header">At some point throughout this pandemic, we’ve all been worried about one overarching thing: <b><span style="color: #8a0303;">infection</span></b>. Could you get sick from the shirt you touched at the mall, the person coughing as you walked by them, or from touching the bench you sat on at the park?</span>
+            <span class="header">People want to reduce their risk of COVID-19 when travelling places, but have no way to know where others around them may have been or if they have been infected. Tracking and reporting about those with the infectious disease can decrease the spread.</span>
+        <section class="et-slide-almound" id="tab-projects"> -->
+        <section class="et-slide-almound" id="tab-projects">
+            <span class="header"><b><span style="color: #8a0303; font-size: 4vh;">Chaos. Risk. Sickness.</span></b></span>
+            <span class="header">The severity of the pandemic has been raging on for the last year, pushing back against social distancing and incoming vaccinations.</span>
+            <span class="header">How can you do your part to continue to protect yourself and help reduce the spread of a virus that has claimed millions of lives?</span>
+            <iframe style="display: block; margin: auto; padding-top: 1vh" width="560" height="315" src="https://www.youtube.com/embed/8xSyZDCgCWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <i><h3 class="text">"Why is this important to me?"</h3></i>
+            <span class="speak">Suppose you want to know where others around you have been. For example, you are at a grocery store, and want to know who else was there that day and if they may become sick or have gotten sick recently. Asking around may seem like the most obvious choice, but you may have travelled to a store that hundreds of others have visited and have no way of knowing your risk of exposure to COVID-19 from travelling to that place on that day. Travelers, travelling to the grocery store or across the country, need a way to access information about the spread of COVID-19 in a manner that is actionable and shows information that is most pertinent to their own exposure and community.</span>
+            <i><h3 class="text">"How was this application built?"</h3></i>
+            <span class="speak">This application was built using only <b> HTML, CSS, Javascript, and jQuery</b>.</span>
+            <span class="speak">We wanted to create an application that was simple and easy to use, creating minimal paths a user can take to either report once or search a case. Our original design can be seen below.</span>
+            <br></br><img style="width: 90vw; height: 90vh; object-fit: contain" src="../images/cotrack/wires.png"/><br></br>
+            <span class="speak">After implementing this design and recieveing feedback from our peers, we realized we had a major issue that would substantially affect the way users intereact with our application. We realized that our application did not allow for flexibility.</span>
+            <span class="speak">Our users needed a way to update their COVID results and save results in the application for easy use and ability to accurately update the data that would be used towards the application. We found that the best way to do that would be to add an account feature in which each user would have an account that is associated their data that can be later updated or deleted.</span>
+            <span class="speak">After a period of further developmennt we developed an application that has the following:</span>
+            <ul style="text-align: left">
+                <li>A search feature with integrated Google Map for searching and visualizing reported locations.</li>
+                <li>A reporting feature in which one can report a postiive/negative COVID-19 result and the locations that person has visited.</li>
+                <li>A Saving feature in which users can save updated reports of specific locations to refer to at a later time.</li>
+            </ul>
+            <span class="speak">in which users can:</span>
+            <ul style="text-align: left">
+                <li>Report locations they have previously been.</li>
+                <li>Search reports for specific locations; this will allow them to identify whether they will or have already put themselves at risk of infection.</li>
+                <li>Inform others that they may have infected them at a specific location.</li>
+                <img style="width: 30vw; height: 50vh; object-fit: contain" src="../images/cotrack/screen1.png"/>
+                <img style="width: 30vw; height: 50vh; object-fit: contain" src="../images/cotrack/screen2.png"/>
+                <img style="width: 30vw; height: 50vh; object-fit: contain" src="../images/cotrack/screen3.png"/>
+            </ul>
+            <i><h3 class="text">"What else can this project do?"</h3></i>
+            <span class="speak">This application currently has the following above features. However, if we were to further develop this application, we could expand the features to include a variety of interactions that would allow the project to be used on a larger, even global scale. We would hope to allow the application to:</span>
+            <ul style="text-align: left">
+                <li>Incorporate the day and time in which a user visited a location into the case reports.</li>
+                <li>Allow user to be able to sync whereabouts with calendars to reduce redundancy for user when entering information.</li>
+                <li>Further develop map interaction to select a place when searching for a location.</li>
+            </ul>
+            <i><h3 class="text">"What did you take away from this project?"</h3></i>
+            <span class="speak">On a technical front, I learned from the challenges I encountered. Not only programming barriers from using unfamilar languages, the course provided a double-edge sword of design opinions and feedback from a variety of peers. This was benfnicial in allowing my team to recieve a multitiude of feedback that was instrumental in creating a creating a flexible interface that accounts for the common issues or “edge” cases users might encounter, but was difficult to navigate as feedback sometimes conflicted and did not align with our project's goals. Overcoming thsi challenge allowed us to see how important user feedback in the design of an application is as we learned how to incoprotate specific feedback in our implementation.</span>
+            <br></br>
+            <span class="speak">Through working on our team, we have learned that a variety of perspectives offer immense feedback and work that is extremely helpful in the development of a project from the prototype to the application itself. Sharing ideas and working with one another allowed us to gain clarity on confusing design aspects and join our technical skills to further develop our project into a working application. If we were to do it all again, we would take more time to further develop the design aspects of our application to ensure that not only the functionality is present, but the design aspects are fully fleshed for the most clear and intuitive use of the application.</span>
+        </section>
+    </main>
+  </main>
+</body>

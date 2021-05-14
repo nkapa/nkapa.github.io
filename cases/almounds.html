@@ -23,11 +23,60 @@
   <!-- partial:index.partial.html -->
   <div class="et-almounds-slide" id="et-home">
     <a href="../index.html#tab-projects" class="fa fa-arrow-circle-left fa-3x back" aria-hidden="true"></a>
-    <div class="case">An iOS application that handles and optimizes the day to day operations of an actual almond processing plant in Central California.</div>
+    <div class="case">An iOS application that handles and <span style="color: #000;">optimizes the day to day operations of an actual almond processing plant</span> in Central California.</div>
   </div>
   <main id="et-main">
-    <section class="et-slide-even" id="tab-projects">
-        <h1 style="font-family: 'Libre Baskerville', serif; margin-bottom: 1vh; margin-top: 1vh; font-size: 5vh;">PROJECTS</h1>
+    <section class="et-slide-almound" id="tab-projects">
+      <br style="clear:both" />
+      <span class="header">The almond processing plant for the Central California Almond Growers Association (CCAGA) <b>spans 200 acres and holds 30 types of almonds represented by 300 growers</b>, yet is organized and represented by <i><b>paper-grid with handwritten text from employees</b></i>.
+      </span>
+      <img style="display: block; margin-left: auto; margin-right: auto; width: 80vw;" src="../images/almounds/paper_grid.png" width="100" />
+      <span class="header">This makes the day-to-day operations of the plant very difficult with a lack of organization and efficiency as the paper grid, meant to represent the vast plant and its current almond loads, uses random placement that wastes money and resources for each load to be placed. Therefore, the administration at the almond processing plant is not equipped with the tools to handle the various robust tasks that are required of the plant. <br></br> <b><span style="color: #964B00;">They need a centralized and modern system in place to handle these day-to-day operations of the processing plant in an efficient and organized manner.</span></b></span>
     </section>
+
+      <ul>
+        <b>Compelling Story</b>
+        <li>Workers at the processing plant have no way to efficiently place the almond loads being dropped off</li>
+        <li>Load placement written on paper in a shack on the property</li>
+        <li>Workers at the almond processing plant are not equipped to decide efficient dropoff placement for the almond loads</li>
+      </ul>
+
+      <ul>
+        <b>Design Decisions</b>
+        <li>3 types of user interface based on worker status</li>
+        <li>Flow + structure of application based on workload process</li>
+        <li>Flexibility for the administration privileges regarding property + overriding changes</li>
+      </ul>
+
+      <ul>
+        <b>Features + Talk about What I worked On (Frontend)</b>
+        <img style="width: 50vw; height: 50vh; object-fit: contain" src="../images/almounds/login.png"/>
+        <li>Administrative, Escort, + Scaler Login (accounts contain user-specific features)</li>
+        <img style="width: 50vw; height: 50vh; object-fit: contain" src="../images/almounds/role1.png"/>
+        <img style="width: 25vw; height: 50vh; object-fit: contain" src="../images/almounds/role2.png"/>
+        <li>Can edit, add, or delete grids, users, loads, and elevators (transports almonds to stockpile)</li>
+        <img style="width: 50vw; height: 50vh; object-fit: contain" src="../images/almounds/load.png"/>
+        <li>Algorithm used that efficiently orders where almond loads should be dropped off to better manage loads and time</li>
+        <li>Creates assignments for workers to complete + allows employees to override any changes made by the application</li>
+        <li>Administration can easily load and manage employees with access to the application through CSV-importable features</li>
+      </ul>
+
+      <ul style="text-align: left">
+        <b>Summary</b>
+        <li>How this can help them + how we kept the users in mind (even spoke to them and took their own input/use cases to create a tailored application)</li>
+        <li>Doesn’t exist on the market and utilizes technology in a beneficial way (saving time/resources/money)</li>
+        <li>Where to go from here</li>
+        <li>How can this application be further developed?</li>
+      </ul>
+
+      <ul style="text-align: left">
+        <b>Takeaways</b>
+        <li>What Did I learn</li>
+        <li>Technical Aspects → Languages, Libraries Used, iOS development, Getting Real-World Feedback</li>
+        <li>Team Aspects → Leadership Role, Responsibility, Working with a Larger Group on a Large Scale Application, Maintain Professional Relationship with Employees at Plant</li>
+      </ul>
+        <!--<span class="header">At some point throughout this pandemic, we’ve all been worried about <span style="color: #8a0303;">infection.</span> Could you get sick from the shirt you touched at the mall, the person coughing as you walked by them, or from touching the bench you sat on at the park?</span>
+        <br></br> 
+        <span class="header">People want to reduce their risk of COVID-19 when travelling places, but have no way to know where others around them may have been or if they have been infected. Tracking and reporting about those with the infectious disease can decrease the spread.</span> -->
   </main>
 </body>
