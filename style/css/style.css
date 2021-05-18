@@ -98,7 +98,8 @@ a {
 .header {
   margin-bottom: 1vh; 
   margin-top: 1vh; 
-  font-size: 3vh;
+  font-size: 2vh;
+  font-weight: 100;
   font-family: serif;
   margin-left: 5vw;
 }
@@ -118,8 +119,8 @@ a {
 }
 
 .text {
-  font-size: 2vw;
-  font-weight: 500;
+  font-size: 2vh;
+  ont-weight: 100;
   float: left;
   font-family: serif;
   padding-top: 5vh;
@@ -127,10 +128,11 @@ a {
 }
 
 .speak {
-  font-size: 1.75vw;
+  font-size: 2vh;
   font-weight: 100;
   float: left;
   text-align: left;
+  font-family: serif;
   display: flex;
 }
 
