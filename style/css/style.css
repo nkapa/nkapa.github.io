@@ -36,6 +36,10 @@ a {
   height: 30px;
 } */
 
+#et-cotrack-main, #et-almounds-main {
+  margin: auto 5%;
+}
+
 /***************** HOME PAGE *****************/
 .et-home-slide {
   position: relative;
@@ -98,10 +102,9 @@ a {
 .header {
   margin-bottom: 1vh; 
   margin-top: 1vh; 
-  font-size: 2vh;
+  font-size: 3vh;
   font-weight: 100;
   font-family: serif;
-  margin-left: 5vw;
 }
 
 .et-slide-almound {
@@ -119,7 +122,7 @@ a {
 }
 
 .text {
-  font-size: 2vh;
+  font-size: 3vh;
   font-weight: 100;
   float: left;
   font-family: serif;
@@ -128,12 +131,19 @@ a {
 }
 
 .speak {
-  font-size: 2vh;
+  font-size: 3vh;
   font-weight: 100;
   float: left;
   text-align: left;
   font-family: serif;
   display: flex;
+}
+
+.lists {
+  font-size: 3vh;
+  font-weight: 100;
+  text-align: left;
+  font-family: serif;
 }
 
 @keyframes floats {
