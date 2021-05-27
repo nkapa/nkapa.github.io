@@ -95,7 +95,6 @@ a {
   font-size: 2rem;
   width: 90vw;
   text-shadow: 0 0 5rem #000;
-  animation: floats 3s ease infinite;
   font-family: 'Libre Baskerville', serif;
 }
 
@@ -121,9 +120,22 @@ a {
     padding-bottom: 6vh;
 }
 
+.et-slide-almound img:hover {
+  transform: scale(1.2);
+  transition: all 1s ease-in-out;
+}
+
 .text {
   font-size: 3vh;
   font-weight: 100;
+  float: left;
+  font-family: serif;
+  text-align: center;
+}
+
+.caption {
+  font-size: 2.5vh;
+  font-style: italic;
   float: left;
   font-family: serif;
   padding-top: 5vh;
