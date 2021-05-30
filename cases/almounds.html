@@ -39,7 +39,7 @@
       <span class="speak">Currently, workers at the processing plant have no way to efficiently place the almond loads being dropped off and typically choose random placement with the hope that it can be placed there under specific requirements on where it can be placed due to the type of almond and the grower. Therefore, these loads consume a lot of time and money required for employees, the land, and the machines at the plant to place these loads on the grid of land to store until further processing. These workers are not equipped to decide efficient dropoff placement for the almond loads, making it difficult to save time, energy, and resources.</span>
 
       <i><h3 class="text">"How was the application designed?"</h3></i>
-      <span class="speak">In order to make design decisions in the best interest of the user, we spoke to employees at the processing plant and revieved a variety of documents they use to clearly understand the issues they face with the current organizational system of the processign plant. From their rfeedback and our own understanding, we found importance in the following points:</span>
+      <span class="speak">In order to make design decisions in the best interest of the user, we spoke to employees at the processing plant and revieved a variety of documents they use to clearly understand the issues they face with the current organizational system of the processing plant. From their feedback and our own understanding, we found importance in the following points:</span>
       <ul style="font-size: 3vh; font-weight: 100; text-align: left; font-family: serif; list-style-type: square;">
         <li>Users need specific features to be available to them as certain types of employees use certain features more or not at all (and shouldn't have the privilege to).</li>
         <li>Users need flexibility regarding administration privileges to override necessary changes of employees and the manipulation of the grid itself (add, deleting, updating stockpile locations).</li>
@@ -48,12 +48,22 @@
       </ul>
       <span class="speak">After taking these ideas into consideration when designing the application, we developed the following wireframes of (most of) our application:</span>
       <img style="height: 90vh; object-fit: contain" src="../images/almounds/screens.png"/>
+      <span class="speak">We created a simple navigation bar that would allows each user to easily see which information they can mamage based on their role.</span>
       <br></br>
-      <span class="speak">I worked on developing the frontend features of the application. This involved using React Native and Axios to develop all the facial features of the application (buttons, apperance, etc.) and connect the functionality of it accordinly. In doing so and working with my team, we were able to develop and iterate upon the following features and more:</span>
+      <span class="speak">The home page includes a large grid that represents the plant grid for easy clickable access to each of the stockpiles to see information about the load being placed or is currently placed there.</span>
+      <br></br>
+      <span class="speak">When managing infromation we created seperate pages for editing an adding infromation within the managing navigation page to allow for quick access for each action.</span>
+      <br></br>
+      <span class="speak">During the development of the application, I worked on creating the frontend features of the application. This involved using React Native and Axios to develop all the facial features of the application (buttons, apperance, etc.) and connect the functionality of it accordinly. In doing so and working with my team, we were able to develop and iterate upon the following features and more:</span>
       <ul style="font-size: 3vh; font-weight: 100; text-align: left; font-family: serif; list-style-type: square;">
         <li>A fully functioning login screen with password authentication capability.</li>
         <img style="width: 50vw; height: 50vh; object-fit: contain" src="../images/almounds/login.png"/>
         <li>Accounts that contains user-specific functionality based on the 3 types of employess: Administration, Escorts, and Scalers.</li>
+        <ul style="font-size: 3vh; font-weight: 100; text-align: left; font-family: serif; list-style-type: square;">
+          <li>Administrator: oversees activities and supervises drop off locations for trucks.</li>
+          <li>Escort: escorts the truck driver to their grid cell where they will drop off their inventory.</li>
+          <li>Scaler: Weighs the trucks coming in and notes down all of the truck and load information.</li>
+        </ul>
         <img style="width: 50vw; height: 50vh; object-fit: contain" src="../images/almounds/role1.png"/>
         <img style="width: 25vw; height: 50vh; object-fit: contain" src="../images/almounds/role2.png"/>
         <li>Users can edit, add, or delete grids, users, loads, and elevators (transports almonds to stockpile).</li>
